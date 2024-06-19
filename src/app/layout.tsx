@@ -18,9 +18,9 @@ export default function RootLayout({
 	return (
 		<html lang="ru">
 			<body className={cn(montserrat.className, "bg-background-primary")}>
-				<div className="flex min-h-screen">
+				<div className="flex">
 					<Sidebar />
-					<div className="flex-grow flex pl-[200px]">{children}</div>
+					{children}
 				</div>
 			</body>
 		</html>
