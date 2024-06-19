@@ -4,7 +4,7 @@ import "./globals.css"
 import { Sidebar } from "@/components/layouts/sidebar"
 import { cn } from "@/utils/cn"
 
-const inter = Montserrat({ subsets: ["latin", "cyrillic"] })
+const montserrat = Montserrat({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
 	title: "Trade Nex",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="ru">
-			<body className={cn(inter.className, "bg-background-primary")}>
+			<body className={cn(montserrat.className, "bg-background-primary")}>
 				<div className="flex min-h-screen">
 					<Sidebar />
 					<div className="flex-grow flex pl-[200px]">{children}</div>
